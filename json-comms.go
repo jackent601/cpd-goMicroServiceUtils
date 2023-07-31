@@ -1,4 +1,4 @@
-package go-micro-service-utils
+package goMicroServiceUtils
 
 import (
 	"bytes"
