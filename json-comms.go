@@ -1,26 +1,21 @@
 package goMicroServiceUtils
 
 import (
-	"bytes"
 	"encoding/json"
-	"encoding/xml"
 	"errors"
 	"fmt"
 	"io"
 	"net/http"
-	"os"
-	"path"
 	"strings"
 )
 
-
-/* 
+/*
 =================================================================================
 JSON Structures
 =================================================================================
 
 =================================================================================
-*/ 
+*/
 
 // Tools is the type for this package. Create a variable of this type, and you have access
 // to all the exported methods with the receiver type *Tools.
@@ -63,13 +58,13 @@ type DisplayResponse struct {
 	Received string
 }
 
-/* 
+/*
 =================================================================================
 JSON Request/Response Utils
 =================================================================================
 
 =================================================================================
-*/ 
+*/
 
 // ReadJSON tries to read the body of a request and converts it from JSON to a variable. The third parameter, data,
 // is expected to be a pointer, so that we can read data into it.
