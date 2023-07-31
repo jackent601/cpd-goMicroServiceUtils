@@ -46,6 +46,23 @@ type XMLResponse struct {
 	Data    interface{} `xml:"data,omitempty"`
 }
 
+type BrokerRequestPayload struct {
+	Action string      `json:"action"`
+	Auth   AuthPayload `json:"auth,omitempty"`
+}
+
+type AuthPayload struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
+
+// Strcture to dynamically populate templates in front-end without using js
+type DisplayResponse struct {
+	Output   string
+	Payload  string
+	Received string
+}
+
 /* 
 =================================================================================
 JSON Request/Response Utils
