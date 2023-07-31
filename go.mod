@@ -1,3 +1,3 @@
-module github.com/jackent601/go-micro-service-utils
+module github.com/jackent601/gMicroServiceUtils
 
 go 1.20
