@@ -1,4 +1,4 @@
-package json-comms
+package go-micro-service-utils
 
 import (
 	"bytes"
